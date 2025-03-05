@@ -29,14 +29,13 @@
 
 <script>
 import Comments from "../components/Comments.vue"; // Import the Comments component
-# import css here
 export default {
   components: { Comments }, // Register Comments component
   data() {
     return {
       activeSection: "about-me",
       sections: [
-        { id: "about-me", name: "About Me", img: "buttons/about-me.png", class: "about-bg", content: 
+        { id: "about-me", name: "About Me", img: "buttons/about-me.png", content: 
         `<p>Hi! I'm Suzanne Marie, a student from BSCS-SS and you are here to get to know me... or not <br>
                 MBTI TYPE: INTP-T
                 <br>
@@ -200,7 +199,7 @@ export default {
 }
 .content {
   flex: 1;
-  margin-left: 225px;
+  margin-left: 250px;
   padding: 0px;
 }
   

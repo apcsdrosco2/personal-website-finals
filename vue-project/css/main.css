@@ -6,7 +6,25 @@
     width: 100%; /* Full width */
     display: flex; /* Ensures content inside is properly placed */
 }
-
+  /* Section Title */
+.section-name {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+  /* Section Content Styling */
+  .section-content {
+    background: white; /* Make content separate from background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify; /* Align text */
+    max-width: 800px; /* Set a max width for better readability */
+    margin: 0 auto; /* Center the content */
+  }
+  
 /* Specific backgrounds for each section */
 .about-me {
     background-image: url('/bgimg/about-me.png');
