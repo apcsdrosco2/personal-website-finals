@@ -29,7 +29,7 @@
 
 <script>
 import Comments from "../components/Comments.vue"; // Import the Comments component
-import "/css/main.css"; 
+# import css here
 export default {
   components: { Comments }, // Register Comments component
   data() {
