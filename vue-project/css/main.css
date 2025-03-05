@@ -1,0 +1,33 @@
+.section-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    display: flex; /* Ensures content inside is properly placed */
+}
+
+/* Specific backgrounds for each section */
+.about-me {
+    background-image: url('/bgimg/about-me.png');
+}
+
+.education {
+    background-image: url('/bgimg/education-bg.jpg');
+}
+
+.it-experience {
+    background-image: url('/bgimg/it-bg.jpg');
+}
+
+/* Optional: Make background stay fixed */
+.fixed-bg {
+    background-attachment: fixed;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}

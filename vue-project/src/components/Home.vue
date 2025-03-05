@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- Sidebar Navigation -->
     <div class="sidebar">
       <div v-for="section in sections" :key="section.id" @click="activeSection = section.id">
         <img :src="section.img" :alt="section.name" />
@@ -7,8 +8,14 @@
       </div>
     </div>
 
+    <!-- Content Area -->
     <div class="content">
-      <section v-for="section in sections" :key="section.id" v-show="activeSection === section.id">
+      <section 
+        v-for="section in sections" 
+        :key="section.id" 
+        v-show="activeSection === section.id"
+        :class="['section-bg', section.id]"
+      >
         <h2>{{ section.name }}</h2>
         <div v-html="section.content"></div>
       </section>
@@ -19,16 +26,17 @@
   </div>
 </template>
 
+
 <script>
 import Comments from "../components/Comments.vue"; // Import the Comments component
-
+import "/css/main.css"; 
 export default {
   components: { Comments }, // Register Comments component
   data() {
     return {
       activeSection: "about-me",
       sections: [
-        { id: "about-me", name: "About Me", img: "buttons/about-me.png", content: 
+        { id: "about-me", name: "About Me", img: "buttons/about-me.png", class: "about-bg", content: 
         `<p>Hi! I'm Suzanne Marie, a student from BSCS-SS and you are here to get to know me... or not <br>
                 MBTI TYPE: INTP-T
                 <br>
@@ -192,7 +200,8 @@ export default {
 }
 .content {
   flex: 1;
-  margin-left: 250px;
-  padding: 20px;
+  margin-left: 225px;
+  padding: 0px;
 }
+  
 </style>
