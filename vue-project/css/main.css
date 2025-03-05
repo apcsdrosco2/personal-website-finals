@@ -38,6 +38,9 @@
     background-image: url('/bgimg/it-bg.jpg');
 }
 
+.favorites {
+    background-image: url('/bgimg/favorites.png');
+}
 /* Optional: Make background stay fixed */
 .fixed-bg {
     background-attachment: fixed;

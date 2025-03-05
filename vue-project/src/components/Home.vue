@@ -18,10 +18,13 @@
       >
         <h2>{{ section.name }}</h2>
         <div v-html="section.content"></div>
+        <!-- Render Gallery inside the 'gallery' section -->
+        <Gallery v-if="activeSection === 'gallery'" />
+        <!-- Show Comments.vue when 'comments' section is selected -->
+        <Comments v-if="activeSection === 'comments'" />
       </section>
 
-      <!-- Show Comments.vue when 'comments' section is selected -->
-      <Comments v-if="activeSection === 'comments'" />
+      
     </div>
   </div>
 </template>
@@ -29,8 +32,10 @@
 
 <script>
 import Comments from "../components/Comments.vue"; // Import the Comments component
+import Gallery from "../components/Gallery.vue"; // Import the Gallery component
+/*import "/css/main.css";*/
 export default {
-  components: { Comments }, // Register Comments component
+  components: { Gallery, Comments }, // Register Gallery and Comments component
   data() {
     return {
       activeSection: "about-me",
@@ -161,7 +166,7 @@ export default {
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
                         </iframe>
                 </div>` },
-        { id: "gallery", name: "Gallery", img: "buttons/gallery.png", content: `<p>Access this link to see my gallery: <a href='https://apcsdrosco2.github.io/WEBPROGSS231-personal-website/home/gallery.html'>Gallery</a></p>` },
+        { id: "gallery", name: "Gallery", img: "buttons/gallery.png", content: "" },
         { id: "comments", name: "Comments", img: "buttons/comments.png", content: "" } 
       ]
     };
@@ -173,6 +178,7 @@ export default {
 .container {
   display: flex;
 }
+
 .sidebar {
     position: fixed; 
     top: 0;
@@ -202,5 +208,15 @@ export default {
   margin-left: 250px;
   padding: 0px;
 }
-  
+
+.favorites {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('/bgimg/favorites.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  padding: 0px;
+}
 </style>
