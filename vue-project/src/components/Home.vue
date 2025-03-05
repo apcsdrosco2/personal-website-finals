@@ -33,7 +33,7 @@
 <script>
 import Comments from "../components/Comments.vue"; // Import the Comments component
 import Gallery from "../components/Gallery.vue"; // Import the Gallery component
-/*import "/css/main.css";*/
+import "/css/main.css";
 export default {
   components: { Gallery, Comments }, // Register Gallery and Comments component
   data() {
@@ -41,7 +41,7 @@ export default {
       activeSection: "about-me",
       sections: [
         { id: "about-me", name: "About Me", img: "buttons/about-me.png", content: 
-        `<p>Hi! I'm Suzanne Marie, a student from BSCS-SS and you are here to get to know me... or not <br>
+        `<p>Hi! I'm Suzanne Marie, a student from BSCS-SS and <br>you are here to get to know me... or not <br>
                 MBTI TYPE: INTP-T
                 <br>
                 ZODIAC SIGN: VIRGO
@@ -59,13 +59,13 @@ export default {
                 ASIA PACIFIC COLLEGE - FIRST YEAR HONOR LISTER.
                 </p>` },
         { id: "it-experience", name: "IT Experience", img: "buttons/it-experience.png", content: 
-        `<p>PROJECTS: <br>
+        `<p>PROJECTS: 
                 <br>
                 HTML Website Building (Grade 9) <br>
-                - I built an webpage entirely out of HTML that gives all information about previous presidents in the Philippines and their greatest contribution to the country.
+                - I built an webpage entirely out of HTML that gives all information about previous presidents <br>in the Philippines and their greatest contribution to the country.
                 <br>
                 EarthCare (1st Year) <br>
-                - A final requirement for the subject PROGCON where it prompts random tasks involving taking care of the environment, then gives out usable points for the user to use as voucher. <br>
+                - A final requirement for the subject PROGCON where it prompts random tasks involving taking<br> care of the environment, then gives out usable points for the user to use as voucher. <br>
                 <br>
                 GAMING: <br>
                 ML (ign: /su:'zæn/_131) <br>
@@ -76,22 +76,20 @@ export default {
                 - Since 2024 
                 </p>` },
         { id: "hobbies", name: "Hobbies", img: "buttons/hobbies.png", content: 
-        `<p>I enjoy learning new guitar pieces (just from watching youtube videos ⚠️not a professional) <br>
-                Listening to music <br>
-                Writing poems <br>
-                Watching/reading <br>
-                Playing video games <br>
-                Baking <br>
-                <br>
-                Things I want to be able to do are : <br>
-                Riding a bike <br>
-                Draw
+        `<p>I enjoy learning new guitar pieces (just from watching youtube videos ⚠️not a professional) <br> <br>
+                Listening to music/Hozier <br><br>
+                Watching/reading <br><br>
+                Playing video games <br><br>
+                Baking <br><br>
+              
+              
                 </p>` },
-        { id: "goals", name: "Goals", img: "buttons/goals.png", content: `<p>I want to be able to graduate on time, get a decent paying job, and then get a vacation to somewhere where there are four seasons in a year.</p>` },
+        { id: "goals", name: "Goals", img: "buttons/goals.png", content: `<p>I want to be able to graduate on time,<br> get a decent paying job, <br> and then get a vacation to somewhere<br> where there are four seasons in a year. <br> Bonus: Go to a Hozier concert.</p>` },
         { id: "favorites", name: "Favorites", img: "buttons/favorites.png", content: 
         `<h3>PLAYLIST</h3>
-            <p>I have this thing that when I really like a movie or series, I make a playlist for me to remember them by.</p>
+            <p>I have this thing that when I really like a movie or series, <br> I make a playlist for me to remember them by.</p>
             <div id="anne">
+            <h1>for Anne w/ an E</h1>
             <iframe 
                 style="border-radius:12px" 
                 src="https://open.spotify.com/embed/playlist/6bV6j6crruknzq3H7DNTMs?utm_source=generator" 
@@ -100,6 +98,7 @@ export default {
             </iframe>
             </div>
             <div id="hilda">
+            <h1>for Hilda Furacão</h1>
             <iframe 
                 style="border-radius:12px" 
                 src="https://open.spotify.com/embed/playlist/0iXro53fNRXLACxLrYgXvK?utm_source=generator" 
@@ -108,6 +107,7 @@ export default {
             </iframe>
             </div>
             <div id="timebomb">
+            <h1>for Arcane</h1>
             <iframe 
                 style="border-radius:12px" 
                 src="https://open.spotify.com/embed/playlist/61m22Pnc53j7ygP3YYIf9x?utm_source=generator" 
@@ -209,14 +209,4 @@ export default {
   padding: 0px;
 }
 
-.favorites {
-  width: 100%;
-  min-height: 100vh;
-  background-image: url('/bgimg/favorites.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  padding: 0px;
-}
 </style>

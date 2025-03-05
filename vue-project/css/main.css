@@ -1,54 +1,164 @@
+/* General Section Styling */
 .section-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Full height */
-    width: 100%; /* Full width */
-    display: flex; /* Ensures content inside is properly placed */
+    padding: 50px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-  /* Section Title */
-.section-name {
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-  
-  /* Section Content Styling */
-  .section-content {
-    background: white; /* Make content separate from background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: justify; /* Align text */
-    max-width: 800px; /* Set a max width for better readability */
-    margin: 0 auto; /* Center the content */
-  }
-  
-/* Specific backgrounds for each section */
+
+/* About Me */
 .about-me {
-    background-image: url('/bgimg/about-me.png');
+    background: url('/bgimg/about-me.png') center/cover no-repeat;
+    padding: 200px;
+}
+.about-me h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e63946;
+    margin-top: -10px;
+}
+.about-me p {
+    font-family:'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f23b0d;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    margin-top: 100px;
 }
 
+/* Education */
 .education {
-    background-image: url('/bgimg/education-bg.jpg');
+    background: url('/bgimg/education.png') center/cover no-repeat;
+    padding: 250px;
+    color: #034d19;
+    font-family: 'Poppins', sans-serif;
+    border-left: 5px solid #02735e;
+    align-items: center;
+}
+.education h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.education p {
+    font-family:'Poppins', cursive;
+    color: #135529;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    margin-top: 150px;
+    font-weight: bold;
 }
 
+
+/* IT Experience */
 .it-experience {
-    background-image: url('/bgimg/it-bg.jpg');
+    background: url('/bgimg/it-experience.png') center/cover no-repeat;
+    font-family: 'Courier New', monospace;
+    border-left: 5px solid #e63946;
+}
+.it-experience h2 {
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 2px solid #e63946;
+    display: inline-block;
+}
+.it-experience p {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 5px;
 }
 
-.favorites {
-    background-image: url('/bgimg/favorites.png');
-}
-/* Optional: Make background stay fixed */
-.fixed-bg {
-    background-attachment: fixed;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
+/* Hobbies */
+.hobbies {
+    background: url('/bgimg/hobbies.png') center/cover no-repeat;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    height: 100vh; 
     width: 100%;
-    height: 100%;
+    padding: 80px; 
+    box-sizing: border-box;
+    position: relative;
+    color: #166242;
+}
+.hobbies h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+.hobbies p {
+    font-family:'Poppins', cursive;
+    color: #135529;
+    font-size: 18px;
+    text-align: left;
+    display: block;
+    margin-top: 150px;
+}
+
+
+/* Goals */
+.goals {
+    background: url('/bgimg/goals.png') center/cover no-repeat;
+    color: #5a2d82;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding:300px;
+}
+
+.goals p {
+    position: absolute;
+    top: 250px;
+    left: 725px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+/* Favorites */
+.favorites {
+    background: url('/bgimg/favorites.png') center/cover no-repeat fixed;
+    padding: 200px;
+    font-size: 75px;
+    font-family: 'Poppins', serif;
+}
+.favorites h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.favorites h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.favorites p {
+    font-size: 16px;
+    font-style: italic;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #c5c5c5;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.gallery h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Comments */
+.comments {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.comments h2 {
+    text-align: center;
+    font-size: 35px;
+}
+.comments p {
+    font-size: 18px;
+    padding: 10px;
 }
